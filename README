@@ -1,1 +1,9 @@
-hello world
+xIMUcppAPI is a bridge between original C# 'xIMU API 13.1' and native C/C++ , visual C++ MFC.
+You can use 'xIMUcppAPI' in any C or C++ or Visual C++ MFC projects.
+Basically 'xIMUcppAPI' is a C++/CLI wrapper around original 'xIMU API' written in C#.
+
+The following may help you how to use it.
+
+http://harinathc.wordpress.com/
+
+
