@@ -1,0 +1,10 @@
+C:\Users\Harinath\Documents\Visual Studio 2010\Projects\xIMUinCPP\x-IMU API 13.1\x-IMU API\bin\Debug\x-IMU API.dll
+C:\Users\Harinath\Documents\Visual Studio 2010\Projects\xIMUinCPP\x-IMU API 13.1\x-IMU API\bin\Debug\x-IMU API.pdb
+C:\Users\Harinath\Documents\Visual Studio 2010\Projects\xIMUinCPP\x-IMU API 13.1\x-IMU API\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Harinath\Documents\Visual Studio 2010\Projects\xIMUinCPP\x-IMU API 13.1\x-IMU API\obj\Debug\x-IMU API.dll
+C:\Users\Harinath\Documents\Visual Studio 2010\Projects\xIMUinCPP\x-IMU API 13.1\x-IMU API\obj\Debug\x-IMU API.pdb
+C:\Users\Harinath\Documents\Visual Studio 2010\Projects\xIMUcppAPI\x-IMU API 13.1\x-IMU API\bin\Debug\x-IMU API.dll
+C:\Users\Harinath\Documents\Visual Studio 2010\Projects\xIMUcppAPI\x-IMU API 13.1\x-IMU API\bin\Debug\x-IMU API.pdb
+C:\Users\Harinath\Documents\Visual Studio 2010\Projects\xIMUcppAPI\x-IMU API 13.1\x-IMU API\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Harinath\Documents\Visual Studio 2010\Projects\xIMUcppAPI\x-IMU API 13.1\x-IMU API\obj\Debug\x-IMU API.dll
+C:\Users\Harinath\Documents\Visual Studio 2010\Projects\xIMUcppAPI\x-IMU API 13.1\x-IMU API\obj\Debug\x-IMU API.pdb

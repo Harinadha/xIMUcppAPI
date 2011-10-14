@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xIMUcppAPI", "xIMUcppAPI\xIMUcppAPI.vcxproj", "{52989EF0-6A09-4F02-923A-7ECD1958272A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "x-IMU API", "x-IMU API 13.1\x-IMU API\x-IMU API.csproj", "{73229026-45DB-444C-963C-963D8E755FFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52989EF0-6A09-4F02-923A-7ECD1958272A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{52989EF0-6A09-4F02-923A-7ECD1958272A}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{52989EF0-6A09-4F02-923A-7ECD1958272A}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{52989EF0-6A09-4F02-923A-7ECD1958272A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{52989EF0-6A09-4F02-923A-7ECD1958272A}.Debug|Win32.Build.0 = Debug|Win32
+		{52989EF0-6A09-4F02-923A-7ECD1958272A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{52989EF0-6A09-4F02-923A-7ECD1958272A}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{52989EF0-6A09-4F02-923A-7ECD1958272A}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{52989EF0-6A09-4F02-923A-7ECD1958272A}.Release|Win32.ActiveCfg = Release|Win32
+		{52989EF0-6A09-4F02-923A-7ECD1958272A}.Release|Win32.Build.0 = Release|Win32
+		{73229026-45DB-444C-963C-963D8E755FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73229026-45DB-444C-963C-963D8E755FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73229026-45DB-444C-963C-963D8E755FFB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{73229026-45DB-444C-963C-963D8E755FFB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{73229026-45DB-444C-963C-963D8E755FFB}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{73229026-45DB-444C-963C-963D8E755FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73229026-45DB-444C-963C-963D8E755FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73229026-45DB-444C-963C-963D8E755FFB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{73229026-45DB-444C-963C-963D8E755FFB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{73229026-45DB-444C-963C-963D8E755FFB}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

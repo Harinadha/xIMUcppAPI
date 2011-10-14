@@ -1,0 +1,1176 @@
+ImageRuntimeVersion: v2.0.50727
+Assembly x-IMU API, Version=13.1.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class x_IMU_API.AsyncReadProgressChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 ProgressPercentage 'get set' : 
+    System.String ProgressMessage 'get set' : 
+  Methods:
+    get_ProgressPercentage(): PrivateScope, Public, HideBySig, SpecialName
+    get_ProgressMessage(): PrivateScope, Public, HideBySig, SpecialName
+Class x_IMU_API.xIMUfile: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String FilePath 'get set' : 
+    Int32 ReadErrors 'get set' : 
+    x_IMU_API.PacketCount PacketsReadCounter 'get set' : 
+    x_IMU_API.PacketCount PacketsWrittenCounter 'get set' : 
+  Events:
+    onAsyncReadProgressChanged AsyncReadProgressChanged: 
+    onAsyncReadCompleted AsyncReadCompleted: 
+    onxIMUdataRead xIMUdataRead: 
+    onErrorDataRead ErrorDataRead: 
+    onCommandDataRead CommandDataRead: 
+    onRegisterDataRead RegisterDataRead: 
+    onDateTimeDataRead DateTimeDataRead: 
+    onRawBatteryAndThermometerDataRead RawBatteryAndThermometerDataRead: 
+    onCalBatteryAndThermometerDataRead CalBatteryAndThermometerDataRead: 
+    onRawInertialAndMagneticDataRead RawInertialAndMagneticDataRead: 
+    onCalInertialAndMagneticDataRead CalInertialAndMagneticDataRead: 
+    onQuaternionDataRead QuaternionDataRead: 
+    onDigitalIODataRead DigitalIODataRead: 
+    onRawAnalogueInputDataRead RawAnalogueInputDataRead: 
+    onCalAnalogueInputDataRead CalAnalogueInputDataRead: 
+    onPWMoutputDataRead PWMoutputDataRead: 
+    onRawADXL345busDataRead RawADXL345busDataRead: 
+    onCalADXL345busDataRead CalADXL345busDataRead: 
+  Methods:
+    get_FilePath(): PrivateScope, Public, HideBySig, SpecialName
+    get_ReadErrors(): PrivateScope, Public, HideBySig, SpecialName
+    get_PacketsReadCounter(): PrivateScope, Public, HideBySig, SpecialName
+    get_PacketsWrittenCounter(): PrivateScope, Public, HideBySig, SpecialName
+    Close(): PrivateScope, Public, HideBySig
+    WriteWriteRegisterPacket(RegisterData): PrivateScope, Public, HideBySig
+    Read(): PrivateScope, Public, HideBySig
+    RunAnsycRead(): PrivateScope, Public, HideBySig
+    CancelAnsycRead(): PrivateScope, Public, HideBySig
+    add_AsyncReadProgressChanged(onAsyncReadProgressChanged): PrivateScope, Public, HideBySig, SpecialName
+    remove_AsyncReadProgressChanged(onAsyncReadProgressChanged): PrivateScope, Public, HideBySig, SpecialName
+    add_AsyncReadCompleted(onAsyncReadCompleted): PrivateScope, Public, HideBySig, SpecialName
+    remove_AsyncReadCompleted(onAsyncReadCompleted): PrivateScope, Public, HideBySig, SpecialName
+    add_xIMUdataRead(onxIMUdataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_xIMUdataRead(onxIMUdataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_ErrorDataRead(onErrorDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_ErrorDataRead(onErrorDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_CommandDataRead(onCommandDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_CommandDataRead(onCommandDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_RegisterDataRead(onRegisterDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_RegisterDataRead(onRegisterDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_DateTimeDataRead(onDateTimeDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_DateTimeDataRead(onDateTimeDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_RawBatteryAndThermometerDataRead(onRawBatteryAndThermometerDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_RawBatteryAndThermometerDataRead(onRawBatteryAndThermometerDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_CalBatteryAndThermometerDataRead(onCalBatteryAndThermometerDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_CalBatteryAndThermometerDataRead(onCalBatteryAndThermometerDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_RawInertialAndMagneticDataRead(onRawInertialAndMagneticDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_RawInertialAndMagneticDataRead(onRawInertialAndMagneticDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_CalInertialAndMagneticDataRead(onCalInertialAndMagneticDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_CalInertialAndMagneticDataRead(onCalInertialAndMagneticDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_QuaternionDataRead(onQuaternionDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_QuaternionDataRead(onQuaternionDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_DigitalIODataRead(onDigitalIODataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_DigitalIODataRead(onDigitalIODataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_RawAnalogueInputDataRead(onRawAnalogueInputDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_RawAnalogueInputDataRead(onRawAnalogueInputDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_CalAnalogueInputDataRead(onCalAnalogueInputDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_CalAnalogueInputDataRead(onCalAnalogueInputDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_PWMoutputDataRead(onPWMoutputDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_PWMoutputDataRead(onPWMoutputDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_RawADXL345busDataRead(onRawADXL345busDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_RawADXL345busDataRead(onRawADXL345busDataRead): PrivateScope, Public, HideBySig, SpecialName
+    add_CalADXL345busDataRead(onCalADXL345busDataRead): PrivateScope, Public, HideBySig, SpecialName
+    remove_CalADXL345busDataRead(onCalADXL345busDataRead): PrivateScope, Public, HideBySig, SpecialName
+Class x_IMU_API.xIMUfile+onAsyncReadProgressChanged: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, AsyncReadProgressChangedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, AsyncReadProgressChangedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onAsyncReadCompleted: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, AsyncReadCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, AsyncReadCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onxIMUdataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, xIMUdata): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, xIMUdata, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onErrorDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ErrorData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ErrorData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onCommandDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CommandData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CommandData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onRegisterDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RegisterData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RegisterData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onDateTimeDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, DateTimeData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, DateTimeData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onRawBatteryAndThermometerDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RawBatteryAndThermometerData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RawBatteryAndThermometerData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onCalBatteryAndThermometerDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CalBatteryAndThermometerData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CalBatteryAndThermometerData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onRawInertialAndMagneticDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RawInertialAndMagneticData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RawInertialAndMagneticData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onCalInertialAndMagneticDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CalInertialAndMagneticData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CalInertialAndMagneticData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onQuaternionDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, QuaternionData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, QuaternionData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onDigitalIODataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, DigitalIOdata): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, DigitalIOdata, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onRawAnalogueInputDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RawAnalogueInputData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RawAnalogueInputData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onCalAnalogueInputDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CalAnalogueInputData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CalAnalogueInputData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onPWMoutputDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, PWMoutputData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, PWMoutputData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onRawADXL345busDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RawADXL345busData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RawADXL345busData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUfile+onCalADXL345busDataRead: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CalADXL345busData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CalADXL345busData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUdata: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+Class x_IMU_API.RawBatteryAndThermometerData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int16, Int16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int16 BatteryVoltage 'get set' : 
+    Int16 Thermometer 'get set' : 
+  Methods:
+    get_BatteryVoltage(): PrivateScope, Public, HideBySig, SpecialName
+    set_BatteryVoltage(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_Thermometer(): PrivateScope, Public, HideBySig, SpecialName
+    set_Thermometer(Int16): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+Class x_IMU_API.PacketCount: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 TotalPackets 'get ' : 
+    Int32 ErrorPackets 'get set' : 
+    Int32 CommandPackets 'get set' : 
+    Int32 ReadRegisterPackets 'get set' : 
+    Int32 WriteRegisterPackets 'get set' : 
+    Int32 ReadDateTimePackets 'get set' : 
+    Int32 WriteDateTimePackets 'get set' : 
+    Int32 RawBatteryAndThermometerDataPackets 'get set' : 
+    Int32 CalBatteryAndThermometerDataPackets 'get set' : 
+    Int32 RawInertialAndMagneticDataPackets 'get set' : 
+    Int32 CalInertialAndMagneticDataPackets 'get set' : 
+    Int32 QuaternionDataPackets 'get set' : 
+    Int32 DigitalIOdataPackets 'get set' : 
+    Int32 RawAnalogueInputDataPackets 'get set' : 
+    Int32 CalAnalogueInputDataPackets 'get set' : 
+    Int32 PWMoutputDataPackets 'get set' : 
+    Int32 RawADXL345busDataPackets 'get set' : 
+    Int32 CalADXL345busDataPackets 'get set' : 
+  Methods:
+    get_TotalPackets(): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CommandPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_CommandPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ReadRegisterPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReadRegisterPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_WriteRegisterPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_WriteRegisterPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ReadDateTimePackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReadDateTimePackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_WriteDateTimePackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_WriteDateTimePackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_RawBatteryAndThermometerDataPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_RawBatteryAndThermometerDataPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CalBatteryAndThermometerDataPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_CalBatteryAndThermometerDataPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_RawInertialAndMagneticDataPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_RawInertialAndMagneticDataPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CalInertialAndMagneticDataPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_CalInertialAndMagneticDataPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_QuaternionDataPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_QuaternionDataPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_DigitalIOdataPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_DigitalIOdataPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_RawAnalogueInputDataPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_RawAnalogueInputDataPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CalAnalogueInputDataPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_CalAnalogueInputDataPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_PWMoutputDataPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_PWMoutputDataPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_RawADXL345busDataPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_RawADXL345busDataPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CalADXL345busDataPackets(): PrivateScope, Public, HideBySig, SpecialName
+    set_CalADXL345busDataPackets(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class x_IMU_API.AsyncScanCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(x_IMU_API.PortAssignment[], Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    x_IMU_API.PortAssignment[] PortAssignments 'get set' : 
+    Boolean Cancelled 'get set' : 
+  Methods:
+    get_PortAssignments(): PrivateScope, Public, HideBySig, SpecialName
+    get_Cancelled(): PrivateScope, Public, HideBySig, SpecialName
+Class x_IMU_API.ErrorData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(x_IMU_API.ErrorCodes): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(UInt16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    x_IMU_API.ErrorCodes ErrorCode 'get set' : 
+  Methods:
+    get_ErrorCode(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorCode(ErrorCodes): PrivateScope, Public, HideBySig, SpecialName
+    GetMessage(): PrivateScope, Public, HideBySig
+Class x_IMU_API.CalInertialAndMagneticData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single[], Single[], Single[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single[] Gyroscope 'get set' : 
+    Single[] Accelerometer 'get set' : 
+    Single[] Magnetometer 'get set' : 
+  Methods:
+    get_Gyroscope(): PrivateScope, Public, HideBySig, SpecialName
+    set_Gyroscope(Single[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Accelerometer(): PrivateScope, Public, HideBySig, SpecialName
+    set_Accelerometer(Single[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Magnetometer(): PrivateScope, Public, HideBySig, SpecialName
+    set_Magnetometer(Single[]): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+Class x_IMU_API.xIMUserial: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 ReceptionErrors 'get set' : 
+    x_IMU_API.PacketCount PacketsReadCounter 'get set' : 
+    x_IMU_API.PacketCount PacketsWrittenCounter 'get set' : 
+    System.String PortName 'get set' : 
+    Boolean IsOpen 'get ' : 
+  Events:
+    onxIMUdataReceived xIMUdataReceived: 
+    onErrorDataReceived ErrorDataReceived: 
+    onCommandDataReceived CommandDataReceived: 
+    onRegisterDataReceived RegisterDataReceived: 
+    onDateTimeDataReceived DateTimeDataReceived: 
+    onRawBatteryAndThermometerDataReceived RawBatteryAndThermometerDataReceived: 
+    onCalBatteryAndThermometerDataReceived CalBatteryAndThermometerDataReceived: 
+    onRawInertialAndMagneticDataReceived RawInertialAndMagneticDataReceived: 
+    onCalInertialAndMagneticDataReceived CalInertialAndMagneticDataReceived: 
+    onQuaternionDataReceived QuaternionDataReceived: 
+    onDigitalIODataReceived DigitalIODataReceived: 
+    onRawAnalogueInputDataReceived RawAnalogueInputDataReceived: 
+    onCalAnalogueInputDataReceived CalAnalogueInputDataReceived: 
+    onPWMoutputDataReceived PWMoutputDataReceived: 
+    onRawADXL345busDataReceived RawADXL345busDataReceived: 
+    onCalADXL345busDataReceived CalADXL345busDataReceived: 
+  Methods:
+    get_ReceptionErrors(): PrivateScope, Public, HideBySig, SpecialName
+    get_PacketsReadCounter(): PrivateScope, Public, HideBySig, SpecialName
+    get_PacketsWrittenCounter(): PrivateScope, Public, HideBySig, SpecialName
+    get_PortName(): PrivateScope, Public, HideBySig, SpecialName
+    set_PortName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_IsOpen(): PrivateScope, Public, HideBySig, SpecialName
+    Open(): PrivateScope, Public, HideBySig
+    Close(): PrivateScope, Public, HideBySig
+    GetPortNames(): PrivateScope, Public, Static, HideBySig
+    SendCommandPacket(CommandCodes): PrivateScope, Public, HideBySig
+    SendReadRegisterPacket(RegisterData): PrivateScope, Public, HideBySig
+    SendWriteRegisterPacket(RegisterData): PrivateScope, Public, HideBySig
+    SendReadDateTimePacket(): PrivateScope, Public, HideBySig
+    SendWriteDateTimePacket(DateTimeData): PrivateScope, Public, HideBySig
+    SendDigitalIOpacket(DigitalIOdata): PrivateScope, Public, HideBySig
+    SendPWMoutputPacket(PWMoutputData): PrivateScope, Public, HideBySig
+    add_xIMUdataReceived(onxIMUdataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_xIMUdataReceived(onxIMUdataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_ErrorDataReceived(onErrorDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_ErrorDataReceived(onErrorDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_CommandDataReceived(onCommandDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_CommandDataReceived(onCommandDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_RegisterDataReceived(onRegisterDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_RegisterDataReceived(onRegisterDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_DateTimeDataReceived(onDateTimeDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_DateTimeDataReceived(onDateTimeDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_RawBatteryAndThermometerDataReceived(onRawBatteryAndThermometerDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_RawBatteryAndThermometerDataReceived(onRawBatteryAndThermometerDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_CalBatteryAndThermometerDataReceived(onCalBatteryAndThermometerDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_CalBatteryAndThermometerDataReceived(onCalBatteryAndThermometerDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_RawInertialAndMagneticDataReceived(onRawInertialAndMagneticDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_RawInertialAndMagneticDataReceived(onRawInertialAndMagneticDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_CalInertialAndMagneticDataReceived(onCalInertialAndMagneticDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_CalInertialAndMagneticDataReceived(onCalInertialAndMagneticDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_QuaternionDataReceived(onQuaternionDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_QuaternionDataReceived(onQuaternionDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_DigitalIODataReceived(onDigitalIODataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_DigitalIODataReceived(onDigitalIODataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_RawAnalogueInputDataReceived(onRawAnalogueInputDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_RawAnalogueInputDataReceived(onRawAnalogueInputDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_CalAnalogueInputDataReceived(onCalAnalogueInputDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_CalAnalogueInputDataReceived(onCalAnalogueInputDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_PWMoutputDataReceived(onPWMoutputDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_PWMoutputDataReceived(onPWMoutputDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_RawADXL345busDataReceived(onRawADXL345busDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_RawADXL345busDataReceived(onRawADXL345busDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    add_CalADXL345busDataReceived(onCalADXL345busDataReceived): PrivateScope, Public, HideBySig, SpecialName
+    remove_CalADXL345busDataReceived(onCalADXL345busDataReceived): PrivateScope, Public, HideBySig, SpecialName
+Class x_IMU_API.xIMUserial+onxIMUdataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, xIMUdata): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, xIMUdata, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onErrorDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ErrorData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ErrorData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onCommandDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CommandData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CommandData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onRegisterDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RegisterData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RegisterData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onDateTimeDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, DateTimeData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, DateTimeData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onRawBatteryAndThermometerDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RawBatteryAndThermometerData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RawBatteryAndThermometerData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onCalBatteryAndThermometerDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CalBatteryAndThermometerData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CalBatteryAndThermometerData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onRawInertialAndMagneticDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RawInertialAndMagneticData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RawInertialAndMagneticData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onCalInertialAndMagneticDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CalInertialAndMagneticData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CalInertialAndMagneticData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onQuaternionDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, QuaternionData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, QuaternionData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onDigitalIODataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, DigitalIOdata): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, DigitalIOdata, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onRawAnalogueInputDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RawAnalogueInputData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RawAnalogueInputData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onCalAnalogueInputDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CalAnalogueInputData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CalAnalogueInputData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onPWMoutputDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, PWMoutputData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, PWMoutputData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onRawADXL345busDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RawADXL345busData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RawADXL345busData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.xIMUserial+onCalADXL345busDataReceived: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CalADXL345busData): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, CalADXL345busData, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.DateTimeData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.DateTime): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Year 'get set' : 
+    Int32 Month 'get set' : 
+    Int32 Day  'get set' : 
+    Int32 Hours 'get set' : 
+    Int32 Minutes 'get set' : 
+    Int32 Seconds 'get set' : 
+  Methods:
+    get_Year(): PrivateScope, Public, HideBySig, SpecialName
+    set_Year(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Month(): PrivateScope, Public, HideBySig, SpecialName
+    set_Month(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Day(): PrivateScope, Public, HideBySig, SpecialName
+    set_Day(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Hours(): PrivateScope, Public, HideBySig, SpecialName
+    set_Hours(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Minutes(): PrivateScope, Public, HideBySig, SpecialName
+    set_Minutes(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Seconds(): PrivateScope, Public, HideBySig, SpecialName
+    set_Seconds(Int32): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToDateTime(): PrivateScope, Public, HideBySig
+    SetFromDateTime(DateTime): PrivateScope, Public, HideBySig
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+Class x_IMU_API.AsyncReadCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(x_IMU_API.PacketCount, System.Exception, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    x_IMU_API.PacketCount PacketCounter 'get set' : 
+    System.Exception Error 'get set' : 
+    Boolean Cancelled 'get set' : 
+  Methods:
+    get_PacketCounter(): PrivateScope, Public, HideBySig, SpecialName
+    get_Error(): PrivateScope, Public, HideBySig, SpecialName
+    get_Cancelled(): PrivateScope, Public, HideBySig, SpecialName
+Class x_IMU_API.PWMoutputData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(UInt16, UInt16, UInt16, UInt16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    UInt16 AX0 'get set' : 
+    UInt16 AX2 'get set' : 
+    UInt16 AX4 'get set' : 
+    UInt16 AX6 'get set' : 
+  Methods:
+    get_AX0(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX0(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_AX2(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX2(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_AX4(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX4(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_AX6(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX6(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+Class x_IMU_API.DigitalPortBits: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean AX0 'get set' : 
+    Boolean AX1 'get set' : 
+    Boolean AX2 'get set' : 
+    Boolean AX3 'get set' : 
+    Boolean AX4 'get set' : 
+    Boolean AX5 'get set' : 
+    Boolean AX6 'get set' : 
+    Boolean AX7 'get set' : 
+  Methods:
+    get_AX0(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX0(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AX1(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX1(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AX2(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX2(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AX3(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX3(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AX4(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX4(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AX5(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX5(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AX6(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX6(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AX7(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX7(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToByte(): PrivateScope, Public, HideBySig
+    SetBitsFromByte(Byte): PrivateScope, Public, HideBySig
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+Class x_IMU_API.CalAnalogueInputData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single, Single, Single, Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single AX0 'get set' : 
+    Single AX1 'get set' : 
+    Single AX2 'get set' : 
+    Single AX3 'get set' : 
+    Single AX4 'get set' : 
+    Single AX5 'get set' : 
+    Single AX6 'get set' : 
+    Single AX7 'get set' : 
+  Methods:
+    get_AX0(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX0(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_AX1(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX1(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_AX2(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX2(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_AX3(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX3(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_AX4(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX4(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_AX5(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX5(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_AX6(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX6(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_AX7(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX7(Single): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+Class x_IMU_API.PortAssignment: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String PortName 'get set' : 
+    System.String DeviceID 'get set' : 
+  Methods:
+    get_PortName(): PrivateScope, Public, HideBySig, SpecialName
+    get_DeviceID(): PrivateScope, Public, HideBySig, SpecialName
+Class x_IMU_API.RawADXL345busData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int16[], Int16[], Int16[], Int16[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int16[] ADXL345_A 'get set' : 
+    Int16[] ADXL345_B 'get set' : 
+    Int16[] ADXL345_C 'get set' : 
+    Int16[] ADXL345_D 'get set' : 
+  Methods:
+    get_ADXL345_A(): PrivateScope, Public, HideBySig, SpecialName
+    set_ADXL345_A(Int16[]): PrivateScope, Public, HideBySig, SpecialName
+    get_ADXL345_B(): PrivateScope, Public, HideBySig, SpecialName
+    set_ADXL345_B(Int16[]): PrivateScope, Public, HideBySig, SpecialName
+    get_ADXL345_C(): PrivateScope, Public, HideBySig, SpecialName
+    set_ADXL345_C(Int16[]): PrivateScope, Public, HideBySig, SpecialName
+    get_ADXL345_D(): PrivateScope, Public, HideBySig, SpecialName
+    set_ADXL345_D(Int16[]): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+Class x_IMU_API.QuaternionData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single[] Quaternion 'get set' : 
+  Methods:
+    get_Quaternion(): PrivateScope, Public, HideBySig, SpecialName
+    set_Quaternion(Single[]): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToConjugate(): PrivateScope, Public, HideBySig
+    ConvertToRotationMatrix(): PrivateScope, Public, HideBySig
+    ConvertToEulerAngles(): PrivateScope, Public, HideBySig
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+    ConvertToRotationMatrixCSVstring(): PrivateScope, Public, HideBySig
+    ConvertToEulerAnglesCSVstring(): PrivateScope, Public, HideBySig
+Class x_IMU_API.CalADXL345busData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single[], Single[], Single[], Single[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single[] ADXL345_A 'get set' : 
+    Single[] ADXL345_B 'get set' : 
+    Single[] ADXL345_C 'get set' : 
+    Single[] ADXL345_D 'get set' : 
+  Methods:
+    get_ADXL345_A(): PrivateScope, Public, HideBySig, SpecialName
+    set_ADXL345_A(Single[]): PrivateScope, Public, HideBySig, SpecialName
+    get_ADXL345_B(): PrivateScope, Public, HideBySig, SpecialName
+    set_ADXL345_B(Single[]): PrivateScope, Public, HideBySig, SpecialName
+    get_ADXL345_C(): PrivateScope, Public, HideBySig, SpecialName
+    set_ADXL345_C(Single[]): PrivateScope, Public, HideBySig, SpecialName
+    get_ADXL345_D(): PrivateScope, Public, HideBySig, SpecialName
+    set_ADXL345_D(Single[]): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+Struct x_IMU_API.CompatibleFirmwareVersions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.CompatibleFirmwareVersions v9_x = 9 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.PacketHeaders: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.PacketHeaders Error = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders Command = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders ReadRegister = 2 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders WriteRegister = 3 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders ReadDateTime = 4 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders WriteDateTime = 5 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders RawBatteryAndThermometerData = 6 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders CalBatteryAndThermometerData = 7 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders RawInertialAndMagneticData = 8 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders CalInertialAndMagneticData = 9 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders QuaternionData = 10 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders DigitalIOdata = 11 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders RawAnalogueInputData = 12 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders CalAnalogueInputData = 13 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders PWMoutputData = 14 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders RawADXL345busData = 15 : Public, Static, Literal, HasDefault
+    x_IMU_API.PacketHeaders CalADXL345busData = 16 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.ErrorCodes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.ErrorCodes NoError = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes FactoryResetFailed = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes LowBattery = 2 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes USBreceiveBufferOverrun = 3 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes USBtransmitBufferOverrun = 4 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes BluetoothReceiveBufferOverrun = 5 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes BluetoothTransmitBufferOverrun = 6 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes SDcardWriteBufferOverrun = 7 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes TooFewBytesInPacket = 8 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes TooManyBytesInPacket = 9 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes InvalidChecksum = 10 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes UnknownHeader = 11 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes InvalidNumBytesForPacketHeader = 12 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes InvalidRegisterAddress = 13 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes RegisterReadOnly = 14 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes InvalidRegisterValue = 15 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes InvalidCommand = 16 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes GyroscopeAxisNotAt200dps = 17 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes GyroscopeNotStationary = 18 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes AcceleroemterAxisNotAt1g = 19 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes MagnetometerSaturation = 20 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes IncorrectAuxillaryPortMode = 21 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes UARTreceiveBufferOverrun = 22 : Public, Static, Literal, HasDefault
+    x_IMU_API.ErrorCodes UARTtransmitBufferOverrun = 23 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.CommandCodes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.CommandCodes NullCommand = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes FactoryReset = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes Reset = 2 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes Sleep = 3 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes ResetSleepTimer = 4 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes SampleGyroscopeAxisAt200dps = 5 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes CalculateGyroscopeSensitivity = 6 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes SampleGyroscopeBiasTemp1 = 7 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes SampleGyroscopeBiasTemp2 = 8 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes CalculateGyroscopeBiasParameters = 9 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes SampleAccelerometerAxisAt1g = 10 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes CalculateAccelerometerBiasAndSensitivity = 11 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes MeasureMagnetometerBiasAndSensitivity = 12 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes AlgorithmInitialise = 13 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes AlgorithmTare = 14 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes AlgorithmClearTare = 15 : Public, Static, Literal, HasDefault
+    x_IMU_API.CommandCodes AlgorithmInitialiseThenTare = 16 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.RegisterAddresses: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.RegisterAddresses FirmwareVersionMajorNum = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses FirmwareVersionMinorNum = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses DeviceID = 2 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ButtonMode = 3 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses BatterySensitivity = 4 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses BatteryBias = 5 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ThermometerSensitivity = 6 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ThermometerBias = 7 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeFullScale = 8 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSensitivityX = 9 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSensitivityY = 10 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSensitivityZ = 11 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSampledPlus200dpsX = 12 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSampledPlus200dpsY = 13 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSampledPlus200dpsZ = 14 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSampledMinus200dpsX = 15 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSampledMinus200dpsY = 16 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSampledMinus200dpsZ = 17 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeBiasAt25degCX = 18 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeBiasAt25degCY = 19 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeBiasAt25degCZ = 20 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeBiasTempSensitivityX = 21 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeBiasTempSensitivityY = 22 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeBiasTempSensitivityZ = 23 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSample1Temp = 24 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSample1BiasX = 25 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSample1BiasY = 26 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSample1BiasZ = 27 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSample2Temp = 28 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSample2BiasX = 29 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSample2BiasY = 30 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses GyroscopeSample2BiasZ = 31 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerFullScale = 32 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerSensitivityX = 33 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerSensitivityY = 34 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerSensitivityZ = 35 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerBiasX = 36 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerBiasY = 37 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerBiasZ = 38 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerSampledPlus1gX = 39 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerSampledPlus1gY = 40 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerSampledPlus1gZ = 41 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerSampledMinus1gX = 42 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerSampledMinus1gY = 43 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AccelerometerSampledMinus1gZ = 44 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses MagnetometerFullScale = 45 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses MagnetometerSensitivityX = 46 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses MagnetometerSensitivityY = 47 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses MagnetometerSensitivityZ = 48 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses MagnetometerBiasX = 49 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses MagnetometerBiasY = 50 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses MagnetometerBiasZ = 51 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses MagnetometerHardIronBiasX = 52 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses MagnetometerHardIronBiasY = 53 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses MagnetometerHardIronBiasZ = 54 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AlgorithmMode = 55 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AlgorithmKp = 56 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AlgorithmKi = 57 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AlgorithmInitKp = 58 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AlgorithmInitPeriod = 59 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AlgorithmMinValidMag = 60 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AlgorithmMaxValidMag = 61 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AlgorithmTareQuat0 = 62 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AlgorithmTareQuat1 = 63 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AlgorithmTareQuat2 = 64 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AlgorithmTareQuat3 = 65 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses SensorDataMode = 66 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses DateTimeDataRate = 67 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses BatteryAndThermometerDataRate = 68 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses InertialAndMagneticDataRate = 69 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses QuaternionDataRate = 70 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses SDcardNewFileName = 71 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses BatteryShutdownVoltage = 72 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses SleepTimer = 73 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses MotionTrigWakeUp = 74 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses BluetoothPower = 75 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AuxiliaryPortMode = 76 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses DigitalIOdirection = 77 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses DigitalIOdataRate = 78 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AnalogueInputDataMode = 79 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AnalogueInputDataRate = 80 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AnalogueInputSensitivity = 81 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses AnalogueInputBias = 82 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses PWMoutputFrequency = 83 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345busDataMode = 84 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345busDataRate = 85 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345AsensitivityX = 86 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345AsensitivityY = 87 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345AsensitivityZ = 88 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345AbiasX = 89 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345AbiasY = 90 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345AbiasZ = 91 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345BsensitivityX = 92 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345BsensitivityY = 93 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345BsensitivityZ = 94 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345BbiasX = 95 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345BbiasY = 96 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345BbiasZ = 97 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345CsensitivityX = 98 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345CsensitivityY = 99 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345CsensitivityZ = 100 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345CbiasX = 101 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345CbiasY = 102 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345CbiasZ = 103 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345DsensitivityX = 104 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345DsensitivityY = 105 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345DsensitivityZ = 106 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345DbiasX = 107 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345DbiasY = 108 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses ADXL345DbiasZ = 109 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses UARTbaudRate = 110 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses UARThardwareFlowControl = 111 : Public, Static, Literal, HasDefault
+    x_IMU_API.RegisterAddresses NumRegisters = 112 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.ButtonModes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.ButtonModes Disabled = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.ButtonModes Reset = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.ButtonModes SleepWake = 2 : Public, Static, Literal, HasDefault
+    x_IMU_API.ButtonModes AlgorithmInitialise = 3 : Public, Static, Literal, HasDefault
+    x_IMU_API.ButtonModes AlgorithmTare = 4 : Public, Static, Literal, HasDefault
+    x_IMU_API.ButtonModes AlgorithmInitialiseThenTare = 5 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.GyroscopeFullScales: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.GyroscopeFullScales FullScalePlusMinus250dps = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.GyroscopeFullScales FullScalePlusMinus500dps = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.GyroscopeFullScales FullScalePlusMinus1000dps = 2 : Public, Static, Literal, HasDefault
+    x_IMU_API.GyroscopeFullScales FullScalePlusMinus2000dps = 3 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.AccelerometerFullScales: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.AccelerometerFullScales PlusMinus2g = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.AccelerometerFullScales PlusMinus4g = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.AccelerometerFullScales PlusMinus8g = 2 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.MagnetometerFullScales: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.MagnetometerFullScales PlusMinus1p3G = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.MagnetometerFullScales PlusMinus1p9G = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.MagnetometerFullScales PlusMinus2p5G = 2 : Public, Static, Literal, HasDefault
+    x_IMU_API.MagnetometerFullScales PlusMinus4p0G = 3 : Public, Static, Literal, HasDefault
+    x_IMU_API.MagnetometerFullScales PlusMinus4p7G = 4 : Public, Static, Literal, HasDefault
+    x_IMU_API.MagnetometerFullScales PlusMinus5p6G = 5 : Public, Static, Literal, HasDefault
+    x_IMU_API.MagnetometerFullScales PlusMinus8p1G = 6 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.AlgorithmModes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.AlgorithmModes Disabled = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.AlgorithmModes IMU = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.AlgorithmModes AHRS = 2 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.SensorDataModes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.SensorDataModes Raw = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.SensorDataModes Calibrated = 1 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.DataOutputRates: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.DataOutputRates Disabled = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.DataOutputRates Rate1Hz = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.DataOutputRates Rate2Hz = 2 : Public, Static, Literal, HasDefault
+    x_IMU_API.DataOutputRates Rate4Hz = 3 : Public, Static, Literal, HasDefault
+    x_IMU_API.DataOutputRates Rate8Hz = 4 : Public, Static, Literal, HasDefault
+    x_IMU_API.DataOutputRates Rate16Hz = 5 : Public, Static, Literal, HasDefault
+    x_IMU_API.DataOutputRates Rate32Hz = 6 : Public, Static, Literal, HasDefault
+    x_IMU_API.DataOutputRates Rate64Hz = 7 : Public, Static, Literal, HasDefault
+    x_IMU_API.DataOutputRates Rate128Hz = 8 : Public, Static, Literal, HasDefault
+    x_IMU_API.DataOutputRates Rate256Hz = 9 : Public, Static, Literal, HasDefault
+    x_IMU_API.DataOutputRates Rate512Hz = 10 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.MotionTrigWakeUpModes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.MotionTrigWakeUpModes Disabled = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.MotionTrigWakeUpModes LowSensitivity = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.MotionTrigWakeUpModes HighSensitivity = 2 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.BluetoothPowerModes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.BluetoothPowerModes Disabled = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.BluetoothPowerModes Enabled = 1 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.auxiliaryPortModes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.auxiliaryPortModes Disabled = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.auxiliaryPortModes DigitalIO = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.auxiliaryPortModes AnalogueInput = 2 : Public, Static, Literal, HasDefault
+    x_IMU_API.auxiliaryPortModes PWMoutput = 3 : Public, Static, Literal, HasDefault
+    x_IMU_API.auxiliaryPortModes ADXL345bus = 4 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.DigitalIOdirections: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.DigitalIOdirections In01234567 = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.DigitalIOdirections In0123456Out7 = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.DigitalIOdirections In012345Out67 = 2 : Public, Static, Literal, HasDefault
+    x_IMU_API.DigitalIOdirections In01234Out567 = 3 : Public, Static, Literal, HasDefault
+    x_IMU_API.DigitalIOdirections In0123Out4567 = 4 : Public, Static, Literal, HasDefault
+    x_IMU_API.DigitalIOdirections In012Out34567 = 5 : Public, Static, Literal, HasDefault
+    x_IMU_API.DigitalIOdirections In01Out234567 = 6 : Public, Static, Literal, HasDefault
+    x_IMU_API.DigitalIOdirections In0Out1234567 = 7 : Public, Static, Literal, HasDefault
+    x_IMU_API.DigitalIOdirections Out01234567 = 8 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.UARTbaudRates: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.UARTbaudRates UARTbaudRate2400 = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARTbaudRates UARTbaudRate4800 = 1 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARTbaudRates UARTbaudRate7200 = 2 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARTbaudRates UARTbaudRate9600 = 3 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARTbaudRates UARTbaudRate14400 = 4 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARTbaudRates UARTbaudRate19200 = 5 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARTbaudRates UARTbaudRate38400 = 6 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARTbaudRates UARTbaudRate57600 = 7 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARTbaudRates UARTbaudRate115200 = 8 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARTbaudRates UARTbaudRate230400 = 9 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARTbaudRates UARTbaudRate460800 = 10 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARTbaudRates UARTbaudRate921600 = 11 : Public, Static, Literal, HasDefault
+Struct x_IMU_API.UARThardwareFlowControl: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    x_IMU_API.UARThardwareFlowControl Off = 0 : Public, Static, Literal, HasDefault
+    x_IMU_API.UARThardwareFlowControl On = 1 : Public, Static, Literal, HasDefault
+Class x_IMU_API.RawInertialAndMagneticData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int16[], Int16[], Int16[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int16[] Gyroscope 'get set' : 
+    Int16[] Accelerometer 'get set' : 
+    Int16[] Magnetometer 'get set' : 
+  Methods:
+    get_Gyroscope(): PrivateScope, Public, HideBySig, SpecialName
+    set_Gyroscope(Int16[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Accelerometer(): PrivateScope, Public, HideBySig, SpecialName
+    set_Accelerometer(Int16[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Magnetometer(): PrivateScope, Public, HideBySig, SpecialName
+    set_Magnetometer(Int16[]): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+Class x_IMU_API.DigitalIOdata: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(x_IMU_API.DigitalPortBits): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    x_IMU_API.DigitalPortBits Direction 'get set' : 
+    x_IMU_API.DigitalPortBits State 'get set' : 
+  Methods:
+    get_Direction(): PrivateScope, Public, HideBySig, SpecialName
+    get_State(): PrivateScope, Public, HideBySig, SpecialName
+    set_State(DigitalPortBits): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+Class x_IMU_API.RawAnalogueInputData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int16, Int16, Int16, Int16, Int16, Int16, Int16, Int16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int16 AX0  'get set' : 
+    Int16 AX1  'get set' : 
+    Int16 AX2  'get set' : 
+    Int16 AX3  'get set' : 
+    Int16 AX4  'get set' : 
+    Int16 AX5  'get set' : 
+    Int16 AX6  'get set' : 
+    Int16 AX7  'get set' : 
+  Methods:
+    get_AX0(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX0(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_AX1(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX1(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_AX2(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX2(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_AX3(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX3(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_AX4(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX4(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_AX5(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX5(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_AX6(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX6(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_AX7(): PrivateScope, Public, HideBySig, SpecialName
+    set_AX7(Int16): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
+Class x_IMU_API.PortScanner: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean FirstResultOnly 'get set' : 
+    Boolean DontGiveUp 'get set' : 
+    Boolean CancellationPending 'get ' : 
+    Boolean IsBusy 'get ' : 
+  Events:
+    onAsyncScanProgressChanged AsyncScanProgressChanged: 
+    onAsyncScanCompleted AsyncScanCompleted: 
+  Methods:
+    get_FirstResultOnly(): PrivateScope, Public, HideBySig, SpecialName
+    set_FirstResultOnly(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_DontGiveUp(): PrivateScope, Public, HideBySig, SpecialName
+    set_DontGiveUp(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_CancellationPending(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsBusy(): PrivateScope, Public, HideBySig, SpecialName
+    Scan(): PrivateScope, Public, HideBySig
+    RunAsynsScan(): PrivateScope, Public, HideBySig
+    CancelAnsycScan(): PrivateScope, Public, HideBySig
+    add_AsyncScanProgressChanged(onAsyncScanProgressChanged): PrivateScope, Public, HideBySig, SpecialName
+    remove_AsyncScanProgressChanged(onAsyncScanProgressChanged): PrivateScope, Public, HideBySig, SpecialName
+    add_AsyncScanCompleted(onAsyncScanCompleted): PrivateScope, Public, HideBySig, SpecialName
+    remove_AsyncScanCompleted(onAsyncScanCompleted): PrivateScope, Public, HideBySig, SpecialName
+Class x_IMU_API.PortScanner+onAsyncScanProgressChanged: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, AsyncScanProgressChangedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, AsyncScanProgressChangedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.PortScanner+onAsyncScanCompleted: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, AsyncScanCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, AsyncScanCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class x_IMU_API.CSVfileWriter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String FileBasePath 'get set' : 
+    x_IMU_API.PacketCount PacketsWrittenCounter 'get set' : 
+    System.String[] FilesCreated 'get set' : 
+  Methods:
+    get_FileBasePath(): PrivateScope, Public, HideBySig, SpecialName
+    get_PacketsWrittenCounter(): PrivateScope, Public, HideBySig, SpecialName
+    get_FilesCreated(): PrivateScope, Public, HideBySig, SpecialName
+    CloseFiles(): PrivateScope, Public, HideBySig
+    WriteData(xIMUdata): PrivateScope, Public, HideBySig
+    WriteErrorData(ErrorData): PrivateScope, Public, HideBySig
+    WriteCommandData(CommandData): PrivateScope, Public, HideBySig
+    WriteRegisterData(RegisterData): PrivateScope, Public, HideBySig
+    WriteDateTimeData(DateTimeData): PrivateScope, Public, HideBySig
+    WriteRawBatteryAndThermometerData(RawBatteryAndThermometerData): PrivateScope, Public, HideBySig
+    WriteCalBatteryAndThermometerData(CalBatteryAndThermometerData): PrivateScope, Public, HideBySig
+    WriteRawInertialAndMagneticData(RawInertialAndMagneticData): PrivateScope, Public, HideBySig
+    WriteCalInertialAndMagneticData(CalInertialAndMagneticData): PrivateScope, Public, HideBySig
+    WriteQuaternionData(QuaternionData): PrivateScope, Public, HideBySig
+    WriteDigitalIOdata(DigitalIOdata): PrivateScope, Public, HideBySig
+    WriteRawAnalogueInputData(RawAnalogueInputData): PrivateScope, Public, HideBySig
+    WriteCalAnalogueInputData(CalAnalogueInputData): PrivateScope, Public, HideBySig
+    WritePWMoutputData(PWMoutputData): PrivateScope, Public, HideBySig
+    WriteRawADXL345busData(RawADXL345busData): PrivateScope, Public, HideBySig
+    WriteCalADXL345busData(CalADXL345busData): PrivateScope, Public, HideBySig
+Class x_IMU_API.AsyncScanProgressChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 ProgressPercentage 'get set' : 
+    System.String ProgressMessage 'get set' : 
+  Methods:
+    get_ProgressPercentage(): PrivateScope, Public, HideBySig, SpecialName
+    get_ProgressMessage(): PrivateScope, Public, HideBySig, SpecialName
+Class x_IMU_API.RegisterData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(x_IMU_API.RegisterAddresses): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(x_IMU_API.RegisterAddresses, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(x_IMU_API.RegisterAddresses, UInt16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(UInt16, UInt16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    x_IMU_API.RegisterAddresses Address 'get set' : 
+    UInt16 Value 'get set' : 
+  Methods:
+    get_Address(): PrivateScope, Public, HideBySig, SpecialName
+    set_Address(RegisterAddresses): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    ConvertValueToFloat(): PrivateScope, Public, HideBySig
+    SetValueFromFloat(Single): PrivateScope, Public, HideBySig
+Class x_IMU_API.CommandData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(x_IMU_API.CommandCodes): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(UInt16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    x_IMU_API.CommandCodes CommandCode 'get set' : 
+  Methods:
+    get_CommandCode(): PrivateScope, Public, HideBySig, SpecialName
+    set_CommandCode(CommandCodes): PrivateScope, Public, HideBySig, SpecialName
+    GetMessage(): PrivateScope, Public, HideBySig
+Class x_IMU_API.CalBatteryAndThermometerData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :x_IMU_API.xIMUdata
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single BatteryVoltage 'get set' : 
+    Single Thermometer 'get set' : 
+  Methods:
+    get_BatteryVoltage(): PrivateScope, Public, HideBySig, SpecialName
+    set_BatteryVoltage(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Thermometer(): PrivateScope, Public, HideBySig, SpecialName
+    set_Thermometer(Single): PrivateScope, Public, HideBySig, SpecialName
+    ConvertToCSVstring(): PrivateScope, Public, HideBySig
