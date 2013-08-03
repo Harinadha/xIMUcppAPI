@@ -1,22 +1,13 @@
+
 /*
-Copyright (C) 2011 Harinadha Reddy Chintalapalli
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-Date   : October 13th 2011
-Verision: 1.0
-
- */
+   Created by Harinadha Reddy Chintalapalli ( http://www.harinadha.wordpress.com ) 
+   License: LGPL 3.0 ( http://www.gnu.org/licenses/lgpl-3.0.txt )
+ 
+   Date   : October 13th 2011
+   Version: 1.0
+   Date : August 3rd 2013
+   Version: 1.1
+*/
 using namespace System;
 using namespace x_IMU_API;
 
