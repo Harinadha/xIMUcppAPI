@@ -1,16 +1,14 @@
 
 /*
- *  Created by Harinadha Reddy Chintalapalli ( http://www.harinadha.wordpress.com ) 
- *  License: LGPL 3.0 ( http://www.gnu.org/licenses/lgpl-3.0.txt )
- */
+   Created by Harinadha Reddy Chintalapalli ( http://www.harinadha.wordpress.com ) 
+   License: LGPL 3.0 ( http://www.gnu.org/licenses/lgpl-3.0.txt )
+ 
+   Date   : October 13th 2011
+   Version: 1.0
+   Date : August 3rd 2013
+   Version: 1.1
+*/
 
-Date   : October 13th 2011
-Version: 1.0
-Date : August 3rd 2013
-Version: 1.1
-
- */
-//-------------------------------------------------------------------------
 #ifdef __cplusplus
 extern "C"
 {
@@ -34,4 +32,4 @@ extern "C"
 #ifdef __cplusplus
 }
 #endif
-//--------------------------------------------------------------------------
+
